@@ -1,0 +1,24 @@
+img {
+  margin-top: 120px;
+  margin-left: 10px;
+  width: 500px;
+  height: 300px;
+  text-align: right;
+}
+
+P.blocktext {
+  margin-left: 150px;
+  margin-right: auto;
+  width: 20em
+}
+
+h4 {
+  text-align: left;
+  margin-left: 150px;
+  font-size: 30px;
+}
+
+.container{
+  display: flex;
+  margin: 5%;
+}

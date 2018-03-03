@@ -1,0 +1,58 @@
+body {
+  background-color: rgb(240, 172, 45);
+  font-family: 'Fauna One', serif;
+  margin: auto;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 100px;
+  margin-bottom: -20px;
+}
+
+.container {
+  text-align: center;
+  margin-top: 120px;
+}
+
+.button {
+  font-family: 'Playfair Display', serif;
+  background-color: black;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.beet {
+  width: 165px;
+  height: 175px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  font-size: 18px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  text-align: right;
+  padding: 16px 16px;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
