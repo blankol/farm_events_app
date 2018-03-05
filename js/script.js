@@ -4,7 +4,6 @@ $(document).ready(function() {
     "AL": {About: "Lorem Ipsum Om", url: "http://yoursite.com", imageUrl: "http://yoursite.com"},
     "NY": {About: "Lorem Ipsum Om", url: "http://yoursite.com", imageUrl: "http://yoursite.com"},
     "AK": {About: "Lorem Ipsum Om", url: "http://yoursite.com", imageUrl: "http://yoursite.com"},
-
     "HI": {About: "Lorem Ipsum Om", url: "http://yoursite.com", imageUrl: "http://yoursite.com"},
     "AK": {About: "Lorem Ipsum Om", url: "http://yoursite.com", imageUrl: "http://yoursite.com"},
     "FL": {About: "Lorem Ipsum Om", url: "http://yoursite.com", imageUrl: "http://yoursite.com"},
@@ -86,7 +85,13 @@ $(document).ready(function() {
       'font-size': '10px'
     },
     click: function(event, data) {
-      $('#clicked-state').text(' ' + data.name + ' ' + 'Farm Dine:' + ' ' + 'About' + ' ' + states[data.name].About + ' ' + states[data.name].url).parent().effect('highlight', {color: '#C7F464'}, 2000);
+      $('#clicked-state').html(
+        '<strong>Name:</strong> ' + data.name 
+        + '<br/> Farm Dine:' 
+        + '<br/> About: ' + states[data.name].About 
+        + '<br/> ' + states[data.name].url
+        + ' <img src="'+  states[data.name].imageUrl  +'" width="200" /> '
+      ).parent().effect('highlight', {color: '#C7F464'}, 2000);
     }
   });
 });

@@ -1,4 +1,4 @@
-img {
+/* img {
   margin-top: 120px;
   margin-left: 10px;
   width: 500px;
@@ -21,4 +21,37 @@ h4 {
 .container{
   display: flex;
   margin: 5%;
+} */
+
+* {
+
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.container > * {
+  width: 50%;
+  padding: 10px;
+}
+
+img {
+  max-width: 100%;
+}
+.heroimg {
+  margin-top: 60px;
+  height: 20%;
+}
+@media screen and (max-width: 600px) {
+  .container {
+    display: block;
+  }
+  .container > * {
+    width: 100%;
+  }
+  .heroimg {
+    margin-top: 0;
+  }
 }
