@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   var states = {
     "AL": {About: "Lorem Ipsum Om", url: "http://yoursite.com", imageUrl: "http://yoursite.com"},
-    "NY": {About: "Lorem Ipsum Om", url: "http://yoursite.com", imageUrl: "http://yoursite.com"},
+    "NY": {State: "New York", About: "Lorem Ipsum Om", url: "http://yoursite.com", imageUrl: "http://yoursite.com"},
     "AK": {About: "Lorem Ipsum Om", url: "http://yoursite.com", imageUrl: "http://yoursite.com"},
     "HI": {About: "Lorem Ipsum Om", url: "http://yoursite.com", imageUrl: "http://yoursite.com"},
     "AK": {About: "Lorem Ipsum Om", url: "http://yoursite.com", imageUrl: "http://yoursite.com"},
@@ -84,14 +84,18 @@ $(document).ready(function() {
       'stroke-width': 0,
       'font-size': '10px'
     },
+    
     click: function(event, data) {
       $('#clicked-state').html(
-        '<strong>Name:</strong> ' + data.name 
-        + '<br/> Farm Dine:' 
-        + '<br/> About: ' + states[data.name].About 
+        '<strong>State:</strong> ' + data.name 
+        + '<br/>' + states[data.name].State 
+        + '<br/> <strong>Farm Dine:</strong>' 
+        + '<br/> <strong>About:</strong> ' + states[data.name].About 
         + '<br/> ' + states[data.name].url
-        + ' <img src="'+  states[data.name].imageUrl  +'" width="200" /> '
-      ).parent().effect('highlight', {color: '#C7F464'}, 2000);
+        + '<br/> <img src="'+  states[data.name].imageUrl  +'" width="200" /> '
+      )
+      // .parent().effect('highlight', {color: '#C7F464'}, 2000);
+      $(this).addClass({'border-color': '3px solid orange'});
     }
   });
 });
